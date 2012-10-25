@@ -1,13 +1,13 @@
 //
 //  RTViewController.m
-//  RTFlowLayout
+//  RTCollectionViewFlowLayout
 //
 //  Created by Aleksandar Vacić on 24.10.12..
 //  Copyright (c) 2012. Aleksandar Vacić. All rights reserved.
 //
 
 #import "RTViewController.h"
-#import "RTFlowLayout.h"
+#import "RTCollectionViewFlowLayout.h"
 #import "RTPhotoCell.h"
 #import "RTGroupHeaderView.h"
 #import "RTGroupFooterView.h"
@@ -24,13 +24,13 @@
 
 #pragma mark - Init
 
-- (id)initWithCollectionViewLayout:(RTFlowLayout *)layout {
+- (id)initWithCollectionViewLayout:(RTCollectionViewFlowLayout *)layout {
 	
 	layout.itemSize = CGSizeMake(60.0, 40.0);
-	layout.headerReferenceSize = CGSizeMake(320, 160);
-	layout.footerReferenceSize = CGSizeMake(320, 100);
-	layout.sectionHeaderReferenceSize = CGSizeMake(320, 60);
-	layout.sectionFooterReferenceSize = CGSizeMake(320, 2);
+	layout.globalHeaderReferenceSize = CGSizeMake(320, 160);
+	layout.globalFooterReferenceSize = CGSizeMake(320, 100);
+	layout.headerReferenceSize = CGSizeMake(320, 60);
+	layout.footerReferenceSize = CGSizeMake(320, 2);
 	layout.sectionInset = UIEdgeInsetsMake(0, 20, 20, 20);
 	layout.scrollDirection = UICollectionViewScrollDirectionVertical;
 	
@@ -122,20 +122,20 @@
 	
 	[self.collectionView registerClass:[RTPhotoCell class] forCellWithReuseIdentifier:@"PHOTO_CELL"];
 	
-	[self.collectionView registerNib:[UINib nibWithNibName:@"MastheadView" bundle:nil] forSupplementaryViewOfKind:RTCollectionElementKindHeader withReuseIdentifier:@"MASTHEAD"];
-	[self.collectionView registerNib:[UINib nibWithNibName:@"ColophonView" bundle:nil] forSupplementaryViewOfKind:RTCollectionElementKindFooter withReuseIdentifier:@"COLOPHON"];
+	[self.collectionView registerNib:[UINib nibWithNibName:@"MastheadView" bundle:nil] forSupplementaryViewOfKind:RTCollectionElementKindGlobalHeader withReuseIdentifier:@"MASTHEAD"];
+	[self.collectionView registerNib:[UINib nibWithNibName:@"ColophonView" bundle:nil] forSupplementaryViewOfKind:RTCollectionElementKindGlobalFooter withReuseIdentifier:@"COLOPHON"];
 	
-	[self.collectionView registerNib:[UINib nibWithNibName:@"GroupHeader" bundle:nil] forSupplementaryViewOfKind:RTCollectionElementKindSectionHeader withReuseIdentifier:@"GROUP_HEADER"];
-	[self.collectionView registerNib:[UINib nibWithNibName:@"GroupFooter" bundle:nil] forSupplementaryViewOfKind:RTCollectionElementKindSectionFooter withReuseIdentifier:@"GROUP_FOOTER"];
+	[self.collectionView registerNib:[UINib nibWithNibName:@"GroupHeader" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"GROUP_HEADER"];
+	[self.collectionView registerNib:[UINib nibWithNibName:@"GroupFooter" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"GROUP_FOOTER"];
 }
 
 
 
 #pragma mark - Flow Layout Delegate
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layoutReferenceSizeForHeader:(RTFlowLayout *)collectionViewLayout {}
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(RTFlowLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {}
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(RTFlowLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {}
+//- (CGSize)collectionView:(UICollectionView *)collectionView layoutReferenceSizeForHeader:(RTCollectionViewFlowLayout *)collectionViewLayout {}
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(RTCollectionViewFlowLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {}
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(RTCollectionViewFlowLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {}
 //	etc.
 
 
@@ -162,22 +162,22 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
 	
-	if (kind == RTCollectionElementKindSectionHeader) {
-		RTGroupHeaderView *v = [collectionView dequeueReusableSupplementaryViewOfKind:RTCollectionElementKindSectionHeader withReuseIdentifier:@"GROUP_HEADER" forIndexPath:indexPath];
+	if (kind == UICollectionElementKindSectionHeader) {
+		RTGroupHeaderView *v = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"GROUP_HEADER" forIndexPath:indexPath];
 		NSDictionary *d = [self.pics objectAtIndex:indexPath.section];
 		v.groupTitleLabel.text = [d objectForKey:@"name"];
 		return v;
 		
-	} else if (kind == RTCollectionElementKindSectionFooter) {
-		RTGroupFooterView *v = [collectionView dequeueReusableSupplementaryViewOfKind:RTCollectionElementKindSectionFooter withReuseIdentifier:@"GROUP_FOOTER" forIndexPath:indexPath];
+	} else if (kind == UICollectionElementKindSectionFooter) {
+		RTGroupFooterView *v = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"GROUP_FOOTER" forIndexPath:indexPath];
 		return v;
 		
-	} else if (kind == RTCollectionElementKindHeader) {
-		RTMastheadView *v = [collectionView dequeueReusableSupplementaryViewOfKind:RTCollectionElementKindHeader withReuseIdentifier:@"MASTHEAD" forIndexPath:indexPath];
+	} else if (kind == RTCollectionElementKindGlobalHeader) {
+		RTMastheadView *v = [collectionView dequeueReusableSupplementaryViewOfKind:RTCollectionElementKindGlobalHeader withReuseIdentifier:@"MASTHEAD" forIndexPath:indexPath];
 		return v;
 		
-	} else if (kind == RTCollectionElementKindFooter) {
-		RTColophonView *v = [collectionView dequeueReusableSupplementaryViewOfKind:RTCollectionElementKindFooter withReuseIdentifier:@"COLOPHON" forIndexPath:indexPath];
+	} else if (kind == RTCollectionElementKindGlobalFooter) {
+		RTColophonView *v = [collectionView dequeueReusableSupplementaryViewOfKind:RTCollectionElementKindGlobalFooter withReuseIdentifier:@"COLOPHON" forIndexPath:indexPath];
 		return v;
 		
 	}

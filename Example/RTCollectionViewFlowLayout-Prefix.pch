@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'RTFlowLayout' target in the 'RTFlowLayout' project
+// Prefix header for all source files of the 'RTCollectionViewFlowLayout' target in the 'RTCollectionViewFlowLayout' project
 //
 
 #import <Availability.h>

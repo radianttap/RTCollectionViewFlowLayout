@@ -17,11 +17,6 @@
 		D0A4028F16380721004887EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A4027716380720004887EF /* main.m */; };
 		D0A4029016380721004887EF /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A4027916380720004887EF /* RTAppDelegate.m */; };
 		D0A4029216380721004887EF /* RTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A4027D16380720004887EF /* RTViewController.m */; };
-		D0A402A3163807FC004887EF /* RTFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A4029A163807FC004887EF /* RTFlowLayout.m */; };
-		D0A402A4163807FC004887EF /* RTFlowLayoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A4029C163807FC004887EF /* RTFlowLayoutInfo.m */; };
-		D0A402A5163807FC004887EF /* RTFlowLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A4029E163807FC004887EF /* RTFlowLayoutItem.m */; };
-		D0A402A6163807FC004887EF /* RTFlowLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A402A0163807FC004887EF /* RTFlowLayoutRow.m */; };
-		D0A402A7163807FC004887EF /* RTFlowLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A402A2163807FC004887EF /* RTFlowLayoutSection.m */; };
 		D0A402E316380E8D004887EF /* 20090822-IMG_9677.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A402AA16380E8D004887EF /* 20090822-IMG_9677.jpg */; };
 		D0A402E416380E8D004887EF /* 20090822-IMG_9690.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A402AB16380E8D004887EF /* 20090822-IMG_9690.jpg */; };
 		D0A402E516380E8D004887EF /* 20090823-IMG_9709.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A402AC16380E8D004887EF /* 20090823-IMG_9709.jpg */; };
@@ -93,10 +88,11 @@
 		D0A4034016381648004887EF /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A4033C16381648004887EF /* Icon-72@2x.png */; };
 		D0A4034116381648004887EF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A4033D16381648004887EF /* Icon.png */; };
 		D0A4034216381648004887EF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A4033E16381648004887EF /* Icon@2x.png */; };
+		D0A4034B1639E613004887EF /* RTCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A4034A1639E613004887EF /* RTCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D0A40243163806DB004887EF /* RTFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A40243163806DB004887EF /* RTCollectionViewFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTCollectionViewFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A40247163806DB004887EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D0A40249163806DB004887EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0A4024B163806DB004887EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,20 +103,10 @@
 		D0A4027716380720004887EF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0A4027816380720004887EF /* RTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
 		D0A4027916380720004887EF /* RTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
-		D0A4027A16380720004887EF /* RTFlowLayout-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RTFlowLayout-Info.plist"; sourceTree = "<group>"; };
-		D0A4027B16380720004887EF /* RTFlowLayout-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTFlowLayout-Prefix.pch"; sourceTree = "<group>"; };
+		D0A4027A16380720004887EF /* RTCollectionViewFlowLayout-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RTCollectionViewFlowLayout-Info.plist"; sourceTree = "<group>"; };
+		D0A4027B16380720004887EF /* RTCollectionViewFlowLayout-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCollectionViewFlowLayout-Prefix.pch"; sourceTree = "<group>"; };
 		D0A4027C16380720004887EF /* RTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTViewController.h; sourceTree = "<group>"; };
 		D0A4027D16380720004887EF /* RTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTViewController.m; sourceTree = "<group>"; };
-		D0A40299163807FC004887EF /* RTFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFlowLayout.h; sourceTree = "<group>"; };
-		D0A4029A163807FC004887EF /* RTFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFlowLayout.m; sourceTree = "<group>"; };
-		D0A4029B163807FC004887EF /* RTFlowLayoutInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFlowLayoutInfo.h; sourceTree = "<group>"; };
-		D0A4029C163807FC004887EF /* RTFlowLayoutInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFlowLayoutInfo.m; sourceTree = "<group>"; };
-		D0A4029D163807FC004887EF /* RTFlowLayoutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFlowLayoutItem.h; sourceTree = "<group>"; };
-		D0A4029E163807FC004887EF /* RTFlowLayoutItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFlowLayoutItem.m; sourceTree = "<group>"; };
-		D0A4029F163807FC004887EF /* RTFlowLayoutRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFlowLayoutRow.h; sourceTree = "<group>"; };
-		D0A402A0163807FC004887EF /* RTFlowLayoutRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFlowLayoutRow.m; sourceTree = "<group>"; };
-		D0A402A1163807FC004887EF /* RTFlowLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFlowLayoutSection.h; sourceTree = "<group>"; };
-		D0A402A2163807FC004887EF /* RTFlowLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFlowLayoutSection.m; sourceTree = "<group>"; };
 		D0A402AA16380E8D004887EF /* 20090822-IMG_9677.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "20090822-IMG_9677.jpg"; sourceTree = "<group>"; };
 		D0A402AB16380E8D004887EF /* 20090822-IMG_9690.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "20090822-IMG_9690.jpg"; sourceTree = "<group>"; };
 		D0A402AC16380E8D004887EF /* 20090823-IMG_9709.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "20090823-IMG_9709.jpg"; sourceTree = "<group>"; };
@@ -197,6 +183,8 @@
 		D0A4033C16381648004887EF /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		D0A4033D16381648004887EF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D0A4033E16381648004887EF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		D0A403491639E613004887EF /* RTCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		D0A4034A1639E613004887EF /* RTCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,9 +205,9 @@
 		D0A40238163806DB004887EF = {
 			isa = PBXGroup;
 			children = (
+				D0A403481639E613004887EF /* RTCollectionViewFlowLayout */,
 				D0A402A816380E8D004887EF /* thumbs */,
 				D0A4026D16380720004887EF /* Example */,
-				D0A4027E16380720004887EF /* RTFlowLayout */,
 				D0A40246163806DB004887EF /* Frameworks */,
 				D0A40244163806DB004887EF /* Products */,
 			);
@@ -228,7 +216,7 @@
 		D0A40244163806DB004887EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0A40243163806DB004887EF /* RTFlowLayout.app */,
+				D0A40243163806DB004887EF /* RTCollectionViewFlowLayout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,23 +245,6 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		D0A4027E16380720004887EF /* RTFlowLayout */ = {
-			isa = PBXGroup;
-			children = (
-				D0A40299163807FC004887EF /* RTFlowLayout.h */,
-				D0A4029A163807FC004887EF /* RTFlowLayout.m */,
-				D0A4029B163807FC004887EF /* RTFlowLayoutInfo.h */,
-				D0A4029C163807FC004887EF /* RTFlowLayoutInfo.m */,
-				D0A4029D163807FC004887EF /* RTFlowLayoutItem.h */,
-				D0A4029E163807FC004887EF /* RTFlowLayoutItem.m */,
-				D0A4029F163807FC004887EF /* RTFlowLayoutRow.h */,
-				D0A402A0163807FC004887EF /* RTFlowLayoutRow.m */,
-				D0A402A1163807FC004887EF /* RTFlowLayoutSection.h */,
-				D0A402A2163807FC004887EF /* RTFlowLayoutSection.m */,
-			);
-			path = RTFlowLayout;
-			sourceTree = "<group>";
-		};
 		D0A4029816380771004887EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +252,8 @@
 				D0A4033C16381648004887EF /* Icon-72@2x.png */,
 				D0A4033D16381648004887EF /* Icon.png */,
 				D0A4033E16381648004887EF /* Icon@2x.png */,
-				D0A4027B16380720004887EF /* RTFlowLayout-Prefix.pch */,
-				D0A4027A16380720004887EF /* RTFlowLayout-Info.plist */,
+				D0A4027B16380720004887EF /* RTCollectionViewFlowLayout-Prefix.pch */,
+				D0A4027A16380720004887EF /* RTCollectionViewFlowLayout-Info.plist */,
 				D0A4026E16380720004887EF /* Default-568h@2x.png */,
 				D0A4026F16380720004887EF /* Default.png */,
 				D0A4027016380720004887EF /* Default@2x.png */,
@@ -417,12 +388,21 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		D0A403481639E613004887EF /* RTCollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D0A403491639E613004887EF /* RTCollectionViewFlowLayout.h */,
+				D0A4034A1639E613004887EF /* RTCollectionViewFlowLayout.m */,
+			);
+			path = RTCollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0A40242163806DB004887EF /* RTFlowLayout */ = {
+		D0A40242163806DB004887EF /* RTCollectionViewFlowLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0A4026A163806DC004887EF /* Build configuration list for PBXNativeTarget "RTFlowLayout" */;
+			buildConfigurationList = D0A4026A163806DC004887EF /* Build configuration list for PBXNativeTarget "RTCollectionViewFlowLayout" */;
 			buildPhases = (
 				D0A4023F163806DB004887EF /* Sources */,
 				D0A40240163806DB004887EF /* Frameworks */,
@@ -433,9 +413,9 @@
 			);
 			dependencies = (
 			);
-			name = RTFlowLayout;
+			name = RTCollectionViewFlowLayout;
 			productName = RTFlowLayout;
-			productReference = D0A40243163806DB004887EF /* RTFlowLayout.app */;
+			productReference = D0A40243163806DB004887EF /* RTCollectionViewFlowLayout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -448,7 +428,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Aleksandar Vacić";
 			};
-			buildConfigurationList = D0A4023D163806DB004887EF /* Build configuration list for PBXProject "RTFlowLayout" */;
+			buildConfigurationList = D0A4023D163806DB004887EF /* Build configuration list for PBXProject "RTCollectionViewFlowLayout" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -460,7 +440,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0A40242163806DB004887EF /* RTFlowLayout */,
+				D0A40242163806DB004887EF /* RTCollectionViewFlowLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -568,16 +548,12 @@
 				D0A4028F16380721004887EF /* main.m in Sources */,
 				D0A4029016380721004887EF /* RTAppDelegate.m in Sources */,
 				D0A4029216380721004887EF /* RTViewController.m in Sources */,
-				D0A402A3163807FC004887EF /* RTFlowLayout.m in Sources */,
-				D0A402A4163807FC004887EF /* RTFlowLayoutInfo.m in Sources */,
-				D0A402A5163807FC004887EF /* RTFlowLayoutItem.m in Sources */,
-				D0A402A6163807FC004887EF /* RTFlowLayoutRow.m in Sources */,
-				D0A402A7163807FC004887EF /* RTFlowLayoutSection.m in Sources */,
 				D0A403221638105A004887EF /* RTColophonView.m in Sources */,
 				D0A403231638105A004887EF /* RTGroupFooterView.m in Sources */,
 				D0A403241638105A004887EF /* RTGroupHeaderView.m in Sources */,
 				D0A403251638105A004887EF /* RTMastheadView.m in Sources */,
 				D0A403261638105A004887EF /* RTPhotoCell.m in Sources */,
+				D0A4034B1639E613004887EF /* RTCollectionViewFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,9 +627,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/RTFlowLayout-Prefix.pch";
-				INFOPLIST_FILE = "Example/RTFlowLayout-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Example/RTCollectionViewFlowLayout-Prefix.pch";
+				INFOPLIST_FILE = "Example/RTCollectionViewFlowLayout-Info.plist";
+				PRODUCT_NAME = RTCollectionViewFlowLayout;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -662,9 +638,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example/RTFlowLayout-Prefix.pch";
-				INFOPLIST_FILE = "Example/RTFlowLayout-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Example/RTCollectionViewFlowLayout-Prefix.pch";
+				INFOPLIST_FILE = "Example/RTCollectionViewFlowLayout-Info.plist";
+				PRODUCT_NAME = RTCollectionViewFlowLayout;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -672,7 +648,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0A4023D163806DB004887EF /* Build configuration list for PBXProject "RTFlowLayout" */ = {
+		D0A4023D163806DB004887EF /* Build configuration list for PBXProject "RTCollectionViewFlowLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0A40268163806DC004887EF /* Debug */,
@@ -681,13 +657,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0A4026A163806DC004887EF /* Build configuration list for PBXNativeTarget "RTFlowLayout" */ = {
+		D0A4026A163806DC004887EF /* Build configuration list for PBXNativeTarget "RTCollectionViewFlowLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0A4026B163806DC004887EF /* Debug */,
 				D0A4026C163806DC004887EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

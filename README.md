@@ -1,4 +1,4 @@
-RTFlowLayout
+RTCollectionViewFlowLayout
 ============
 
-Like UICollectionViewFlowLayout, but with additional supplementary views.
+Subclass of UICollectionViewFlowLayout with additional supplementary views.

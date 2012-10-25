@@ -1,6 +1,6 @@
 //
 //  RTAppDelegate.m
-//  RTFlowLayout
+//  RTCollectionViewFlowLayout
 //
 //  Created by Aleksandar Vacić on 24.10.12..
 //  Copyright (c) 2012. Aleksandar Vacić. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "RTAppDelegate.h"
 #import "RTViewController.h"
-#import "RTFlowLayout.h"
+#import "RTCollectionViewFlowLayout.h"
 
 @implementation RTAppDelegate
 
@@ -16,7 +16,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-	RTFlowLayout *l = [[RTFlowLayout alloc] init];
+	RTCollectionViewFlowLayout *l = [[RTCollectionViewFlowLayout alloc] init];
+//	UICollectionViewFlowLayout *l = [[UICollectionViewFlowLayout alloc] init];
 
 	RTViewController *vc = [[RTViewController alloc] initWithCollectionViewLayout:l];
 	self.window.rootViewController = vc;
